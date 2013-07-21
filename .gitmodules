@@ -1,3 +1,9 @@
 [submodule "modules/tmux"]
 	path = modules/tmux
 	url = git@github.com:duritong/puppet-tmux.git
+[submodule "modules/rvm"]
+	path = modules/rvm
+	url = git://github.com/blt04/puppet-rvm.git
+[submodule "modules/postgresql"]
+	path = modules/postgresql
+	url = git@github.com:akumria/puppet-postgresql.git
