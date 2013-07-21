@@ -1,0 +1,5 @@
+include developmenttools
+include developmentlibraries
+include tmux
+include synergy
+include imagemagick
