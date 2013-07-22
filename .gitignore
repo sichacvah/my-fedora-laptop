@@ -3,3 +3,4 @@ modules/concat
 modules/firewall
 modules/postgresql
 modules/stdlib
+modules/mysql
