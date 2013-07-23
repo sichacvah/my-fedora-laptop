@@ -13,6 +13,7 @@ class skype {
   package { 'pulseaudio-libs.i686': }
   package { 'qt.i686': }
   package { 'qt-x11.i686': }
+  package { 'qtwebkit.i686': }
   package { 'zlib.i686': }
 
   package { 'skype':
@@ -34,6 +35,7 @@ class skype {
       'pulseaudio-libs.i686',
       'qt.i686',
       'qt-x11.i686',
+      'qtwebkit.i686',
       'zlib.i686'
     ],
   }
