@@ -10,6 +10,12 @@ include chrome
 include ctags
 include phantomjs
 
+# Vim
+include vim
+vim::bundle { [
+  'tpope/vim-rails',
+]: }
+
 include imagemagick
 
 # From puppetlabs/sqlite
