@@ -1,19 +1,19 @@
 class skype {
-  package { 'alsa-lib': }
-  package { 'fontconfig': }
-  package { 'freetype': }
-  package { 'glib2': }
-  package { 'libSM': }
-  package { 'libXScrnSaver': }
-  package { 'libXi': }
-  package { 'libXrandr': }
-  package { 'libXrender': }
-  package { 'libXv': }
-  package { 'libstdc++': }
-  package { 'pulseaudio-libs': }
-  package { 'qt': }
-  package { 'qt-x11': }
-  package { 'zlib': }
+  package { 'alsa-lib.i686': }
+  package { 'fontconfig.i686': }
+  package { 'freetype.i686': }
+  package { 'glib2.i686': }
+  package { 'libSM.i686': }
+  package { 'libXScrnSaver.i686': }
+  package { 'libXi.i686': }
+  package { 'libXrandr.i686': }
+  package { 'libXrender.i686': }
+  package { 'libXv.i686': }
+  package { 'libstdc++.i686': }
+  package { 'pulseaudio-libs.i686': }
+  package { 'qt.i686': }
+  package { 'qt-x11.i686': }
+  package { 'zlib.i686': }
 
   package { 'skype':
     provider => 'rpm',
