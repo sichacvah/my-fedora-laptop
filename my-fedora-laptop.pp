@@ -1,6 +1,7 @@
 include developmenttools
 include developmentlibraries
 include cmake
+include pythondevel
 
 include tmux
 include synergy
