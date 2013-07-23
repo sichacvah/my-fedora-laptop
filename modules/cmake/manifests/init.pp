@@ -1,0 +1,3 @@
+class cmake {
+  package { 'cmake': }
+}

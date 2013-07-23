@@ -7,3 +7,6 @@
 [submodule "modules/postgresql"]
 	path = modules/postgresql
 	url = git@github.com:akumria/puppet-postgresql.git
+[submodule "modules/phantomjs"]
+	path = modules/phantomjs
+	url = git@github.com:brhelwig/puppet-phantomjs.git

@@ -1,0 +1,3 @@
+class ctags {
+  package { 'ctags': }
+}

@@ -1,7 +1,10 @@
 class qtdevel {
+  package { 'qt-devel': ensure => installed }
   package { 'qtwebkit-devel': ensure => installed }
-  exec { "Create symlink from qmake to `which qmake-qt4`":
-    unless => "/usr/bin/which qmake",
-    command => "/usr/bin/ln -s `/usr/bin/which qmake-qt4` /usr/bin/qmake",
+
+  file { "/usr/bin/qmake":
+    target  => "/usr/bin/qmake-qt4",
+    ensure  => link,
+    require => Package["qt-devel"],
   }
 }

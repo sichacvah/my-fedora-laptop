@@ -1,8 +1,13 @@
 include developmenttools
 include developmentlibraries
+include cmake
 
 include tmux
 include synergy
+include skype
+include chrome
+include ctags
+include phantomjs
 
 include imagemagick
 
