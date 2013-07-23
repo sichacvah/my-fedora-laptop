@@ -4,3 +4,4 @@ modules/firewall
 modules/postgresql
 modules/stdlib
 modules/mysql
+modules/sqlite

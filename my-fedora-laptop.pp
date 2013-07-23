@@ -6,6 +6,10 @@ include synergy
 
 include imagemagick
 
+# From puppetlabs/sqlite
+class { 'sqlite': }
+include sqlitelibs
+
 # From puppetlabs/postgresql
 include postgresql::server
 include postgresqllibs
