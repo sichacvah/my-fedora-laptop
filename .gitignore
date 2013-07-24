@@ -5,3 +5,4 @@ modules/postgresql
 modules/stdlib
 modules/mysql
 modules/sqlite
+modules/vcsrepo

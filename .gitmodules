@@ -10,9 +10,6 @@
 [submodule "modules/phantomjs"]
 	path = modules/phantomjs
 	url = git@github.com:brhelwig/puppet-phantomjs.git
-[submodule "modules/repository"]
-	path = modules/repository
-	url = git@github.com:boxen/puppet-repository.git
 [submodule "modules/vim"]
 	path = modules/vim
 	url = git@github.com:jivagoalves/puppet-vim.git
