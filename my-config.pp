@@ -47,7 +47,6 @@ vim::bundle { [
   'guns/vim-clojure-static',
   'kchmck/vim-coffee-script',
   'tpope/vim-commentary',
-  'skwp/vim-ruby-conque',
   'tpope/vim-fireplace',
   'tpope/vim-fugitive',
   'airblade/vim-gitgutter',
