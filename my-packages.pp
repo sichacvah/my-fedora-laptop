@@ -21,7 +21,7 @@ include postgresqllibs
 
 # MySQL stuff
 # From puppetlabs/mysql
-if $::operatingsystem == 'Fedora' and $::operatinsystemrelease >= 19 {
+if ${operatingsystem} == 'Fedora' and ${operatinsystemrelease} >= 19 {
   # Declare the packages explicitly,
   # otherwise this will install mariadb for Fedora >= 19
   class { 'mysql':
