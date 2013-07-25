@@ -3,9 +3,10 @@ $codepath = "${homedir}/code"
 
 # Dotfiles repo
 vcsrepo { "${codepath}/dotfiles":
-  ensure   => present,
+  ensure   => latest,
   provider => git,
-  source   => 'https://github.com/jivagoalves/dotfiles.git'
+  source   => 'https://github.com/jivagoalves/dotfiles.git',
+  revision => 'master'
 }
 
 # .gitconfig from my dotfiles repo
