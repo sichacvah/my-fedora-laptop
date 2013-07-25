@@ -15,8 +15,8 @@ puppet module list --modulepath $(pwd)/modules | grep puppetlabs-mysql || sudo p
 # Install vcsrepo module if we haven't yet
 puppet module list --modulepath $(pwd)/modules | grep puppetlabs-vcsrepo || sudo puppet module install --modulepath $(pwd)/modules puppetlabs/vcsrepo
 
-# Finally execute my custom recipe
+# Finally execute my custom recipes
 ## packages
-sudo puppet apply --modulepath $(pwd)/modules -v my-packages.pp
+./run-my-packages.sh
 ## custom configuration per user
-puppet apply --modulepath $(pwd)/modules -v my-config.pp
+./run-my-config.sh
