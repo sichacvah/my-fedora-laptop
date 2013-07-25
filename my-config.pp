@@ -9,13 +9,19 @@ vcsrepo { "${codepath}/dotfiles":
   revision => 'master'
 }
 
-# .gitconfig from my dotfiles repo
+# Git stuff
+## .gitconfig from my dotfiles repo
 file { "${homedir}/.gitconfig":
   ensure  => link,
   target  => "${codepath}/dotfiles/gitconfig",
   require => Vcsrepo["${codepath}/dotfiles"]
 }
-
+## .gitignore from my dotfiles repo
+file { "${homedir}/.gitignore":
+  ensure  => link,
+  target  => "${codepath}/dotfiles/gitignore",
+  require => Vcsrepo["${codepath}/dotfiles"]
+}
 
 # vim-pathogen
 include vim
