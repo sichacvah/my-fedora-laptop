@@ -8,6 +8,14 @@ vcsrepo { "${codepath}/dotfiles":
   source   => 'https://github.com/jivagoalves/dotfiles.git'
 }
 
+# .gitconfig from my dotfiles repo
+file { "${homedir}/.gitconfig":
+  ensure  => link,
+  target  => "${codepath}/dotfiles/gitconfig",
+  require => Vcsrepo["${codepath}/dotfiles"]
+}
+
+
 # vim-pathogen
 include vim
 
@@ -17,7 +25,6 @@ file { "${vim::vimrc}":
   target  => "${codepath}/dotfiles/vimrc",
   require => Vcsrepo["${codepath}/dotfiles"]
 }
-
 
 # My vim's plugins
 vim::bundle { [
