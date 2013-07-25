@@ -36,6 +36,7 @@ file { "${vim::vimrc}":
 # My vim's plugins
 vim::bundle { [
   'tpope/vim-rails',
+  'christoomey/vim-tmux-navigator'
 ]: }
 
 # Tmux
