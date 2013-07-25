@@ -35,8 +35,42 @@ file { "${vim::vimrc}":
 
 # My vim's plugins
 vim::bundle { [
+  'kien/ctrlp.vim',
+  'mattn/gist-vim',
+  'claco/jasmine.vim',
+  'scrooloose/nerdtree',
+  'msanders/snipmate.vim',
+  'godlygeek/tabular',
+  'jivagoalves/tslime.vim',
+  'tpope/vim-bundler',
+  'tpope/vim-classpath',
+  'guns/vim-clojure-static',
+  'kchmck/vim-coffee-script',
+  'tpope/vim-commentary',
+  'rson/vim-conque',
+  'tpope/vim-fireplace',
+  'tpope/vim-fugitive',
+  'airblade/vim-gitgutter',
+  'tpope/vim-haml',
+  'henrik/vim-indexed-search',
+  'itspriddle/vim-jquery',
+  'plasticboy/vim-markdown',
+  'edsono/vim-matchit',
   'tpope/vim-rails',
-  'christoomey/vim-tmux-navigator'
+  'tpope/vim-repeat',
+  'skwp/vim-ruby-conque',
+  'vim-ruby/vim-ruby',
+  'ecomba/vim-ruby-refactoring',
+  'tpope/vim-surround',
+  'nelstrom/vim-textobj-rubyblock',
+  'lucapette/vim-textobj-underscore',
+  'kana/vim-textobj-user',
+  'christoomey/vim-tmux-navigator',
+  'jgdavey/vim-turbux',
+  'tpope/vim-unimpaired',
+  'tpope/vim-vividchalk',
+  'mattn/webapi-vim',
+  'Valloric/YouCompleteMe',
 ]: }
 
 # Tmux
