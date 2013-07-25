@@ -37,3 +37,11 @@ file { "${vim::vimrc}":
 vim::bundle { [
   'tpope/vim-rails',
 ]: }
+
+# Tmux
+## .tmux.conf from my dotfiles repo
+file { "${homedir}/.tmux.conf":
+  ensure  => link,
+  target  => "${codepath}/dotfiles/tmux.conf",
+  require => Vcsrepo["${codepath}/dotfiles"]
+}
