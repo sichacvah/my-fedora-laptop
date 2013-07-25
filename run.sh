@@ -16,4 +16,7 @@ puppet module list --modulepath $(pwd)/modules | grep puppetlabs-mysql || sudo p
 puppet module list --modulepath $(pwd)/modules | grep puppetlabs-vcsrepo || sudo puppet module install --modulepath $(pwd)/modules puppetlabs/vcsrepo
 
 # Finally execute my custom recipe
-sudo puppet apply --modulepath $(pwd)/modules -v my-fedora-laptop.pp
+## packages
+sudo puppet apply --modulepath $(pwd)/modules -v my-packages.pp
+## custom configuration per user
+puppet apply --modulepath $(pwd)/modules -v my-config.pp
