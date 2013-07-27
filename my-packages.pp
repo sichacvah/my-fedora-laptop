@@ -12,6 +12,7 @@ include phantomjs
 include imagemagick
 
 include rpmfusionrepos
+include multimedia
 
 # From puppetlabs/sqlite
 class { 'sqlite': }
