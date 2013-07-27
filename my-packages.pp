@@ -11,6 +11,8 @@ include ctags
 include phantomjs
 include imagemagick
 
+include rpmfusionrepos
+
 # From puppetlabs/sqlite
 class { 'sqlite': }
 include sqlitelibs
