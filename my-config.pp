@@ -70,6 +70,8 @@ vim::bundle { [
   'tpope/vim-vividchalk',
   'mattn/webapi-vim',
   'Valloric/YouCompleteMe',
+  'rodjek/vim-puppet',
+  'scrooloose/syntastic',
 ]: }
 
 # Tmux
