@@ -13,3 +13,6 @@
 [submodule "modules/vim"]
 	path = modules/vim
 	url = git@github.com:jivagoalves/puppet-vim.git
+[submodule "modules/youcompleteme"]
+	path = modules/youcompleteme
+	url = git@github.com:jivagoalves/puppet-youcompleteme.git

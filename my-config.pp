@@ -81,3 +81,7 @@ file { "${homedir}/.tmux.conf":
   target  => "${codepath}/dotfiles/tmux.conf",
   require => Vcsrepo["${codepath}/dotfiles"]
 }
+
+class { 'youcompleteme':
+  require => Vcsrepo["${vim::vimdir}/bundle/YouCompleteMe"]
+}
