@@ -57,7 +57,6 @@ vim::bundle { [
   'edsono/vim-matchit',
   'tpope/vim-rails',
   'tpope/vim-repeat',
-  'skwp/vim-ruby-conque',
   'vim-ruby/vim-ruby',
   'ecomba/vim-ruby-refactoring',
   'tpope/vim-surround',
